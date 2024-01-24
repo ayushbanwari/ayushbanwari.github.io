@@ -1,6 +1,6 @@
 .bigimage {
     height:100vh;
-    background: url('seattle.jpg');
+    background: url("seattle.jpg");
     background-size:cover;
     position:relative;
 }
