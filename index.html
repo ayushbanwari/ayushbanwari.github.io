@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <title>Ayush Banwari</title>
+        <link rel="icon" href="favicon.svg">
+    </head>
+
+    <body class="centered">
+
+    <!-- Navigation Bar -->
+        <!-- Create a Navigation Bar on top of the page to navigate to sections -->
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="color: #F8F0E3">Ayush</a>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home" style="color: #F8F0E3">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about" style="color: #F8F0E3">About Me</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#resume" style="color: #F8F0E3">Resume</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#projects" style="color: #F8F0E3">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Add Javascript to change navbar background to black when scrolling -->
+        <script>
+            const header = document.querySelector('.navbar');
+                window.onscroll = function() {
+                    var top = window.scrollY;
+                    if(top >=100) {
+                        header.classList.add('navbarDark');
+                    } else {
+                        header.classList.remove('navbarDark');
+                    }
+                }
+        </script>
+
+    <!-- Homepage -->
+        <!-- Add text, image, and title description and title animation -->
+        <section class="bigimage" id="home">
+            <div class="hero-text">
+                <h2 class="hero_title">Ayush Banwari</h2>
+                <p class="hero_desc"><animate>Financial Analyst<animate></p>
+            </div>
+        </section>
+
+    <!-- About -->
+        <!-- Add about page with description, image, and list-->
+        <section id="about">
+            <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <img src="Ayu.jpg" class= "imageAboutPage">
+                    </div>
+                    <div class="col-lg-8">
+                        <p>
+                            Hi! My name is Ayush Banwari and I am a graduate from the University of Washington with a degree in Finance and Accounting and a Minor in Informatics.
+                        </p>
+                        <div>
+                            <div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>School: University of Washington</li>
+                                            <li>Major: Finance and Accounting</li>
+                                            <li>Age: 23</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Graduation: July 2023</li>
+                                            <li>Email: abanwari127@gmail.com</li>
+                                            <li>City: Seattle, WA</li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p>
+                                Through my studies, I have developed a strong foundation in technological tools and financial analysis. I believe my experience in rotational programs taught me about key areas of the overall business.
+                                I have gained an understanding of financial data analytics through my development of dashboards using SQL to model financial data for internal and external users. I have applied my skills in my rigourous coursework, internships, and campus organizations. I am always searching for learning experiences and opportunities to involve myself in my community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Resume -->
+        <section id="resume">
+            <div class="container mt-4">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="container mt-4">
+                            <h2 class="container mt-4"><i class="fa fa-certificate fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Education</h2>
+                            <h5 class="container mt-4"><b>University of Washington - Seattle</b></h5>
+                            <h6 class="container mt-2"><i>Accounting and Finance Graduate</i></h6>
+                            <h6 class="container mt-4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2019 - July 2023</h6>
+                            <p><li>Standard Admit to the Michael G. Foster School of Business and minor in Informatics.</li></p>
+                            <p><li>Member of the Professional Business Fraternity: Alpha Kappa Psi.</li></p>
+                            <hr>
+                        </div>
+                        <div class="container mt-4">
+                            <h5 class="container mt-4"><b>North Creek High School</b></h5>
+                            <h6 class="container mt-2"><i>AP Student</i></h6>
+                            <h6 class="container mt-4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2017 - June 2019</h6>
+                            <p><li>Clubs: Tech Student Association, Future Business Leaders of America.</li></p>
+                            <p><li>AP Coursework: AP Calculus; AP Statistics; AP English.</li></p>
+                            <hr>
+                        </div>
+                    </div>
+
+                <div class="col-md-6">
+                    <div class="container mt-4">
+                        <h2 class="container mt-4"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Work Experience</h2>
+                        <h5 class="container mt-4"><b>Deloitte</b></h5>
+                        <h6 class="container mt-2"><i>Audit & Assurance Associate</i></h6>
+                        <h6 class="container mt-4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2023 - Current</h6>
+                        <p><li>Project: Store Impairment Analysis Dashboard.</li></p>
+                        <p><li>Displayed data via Tableau and Python to evaluate the probability of impairment for 10K coffee stores in the US.</li></p>
+                        <hr>
+                    </div>
+                    <div class="container mt-4">
+                        <h5 class="container mt-4"><b>Amazon</b></h5>
+                        <h6 class="container mt-2"><i>Financial Analyst Intern</i></h6>
+                        <h6 class="container mt-4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - March 2023</h6>
+                        <p><li>Project: Monthly Reconciliation Automation.</li></p>
+                        <p><li>Used SQL and Amazon Quicksight to automate monthly reconcilation of accounts worth $2M.</li></p>
+                        <hr>
+                    </div>
+                    <div class="container mt-4">
+                        <h5 class="container mt-4"><b>Deloitte</b></h5>
+                        <h6 class="container mt-2"><i>Audit & Assurance Intern</i></h6>
+                        <h6 class="container mt-4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2022 - Aug 2022</h6>
+                        <p><li>Project: Start-Up Clients' Risk Assessment.</li></p>
+                        <p><li>Built a risk matrix and decision trees to evaluate riskiness of 5 client's current business model.</li></p>
+                        <hr>
+                    </div>
+                    <div class="container mt-4">
+                        <h5 class="container mt-4"><b>Volunteers of America</b></h5>
+                        <h6 class="container mt-2"><i>Data Analyst Intern</i></h6>
+                        <h6 class="container mt-4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2021 - Aug 2021</h6>
+                        <p><li>Project: Rent Accounts Data Cleaning.</li></p>
+                        <p><li>Used R to clean $10M worth of cash to distribute to community members impacted by COVID-19.</li></p>
+                        <p></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Projects -->
+        <!-- Add Projects Page with image, description and link to project-->
+        <section id="projects">
+            <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card project">
+                            <img class="card-img-top" src="program.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">CS50 Project</h4>
+                                <p class="card-text"><b>Learning:</b> ???</p>
+                                <p class="card-text"><b>Challenges:</b> ???</p>
+                                <div class="text-center">
+                                    <a href="#" target = "_blank" class="btn btn-secondary">See Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card project">
+                        <img class="card-img-top" src="healthcare.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Healthcare Utlization Analysis</h4>
+                                <p class="card-text"><b>Learning:</b> Understood R Shiny App and displaying applications in a meaningful way with a team</p>
+                                <p class="card-text"><b>Challenges:</b> Leading a team project and managing deadlines</p>
+                                <div class="text-center">
+                                    <a href="https://padmag.shinyapps.io/info478-project/" target = "_blank" class="btn btn-secondary">See Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="spotify.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Spotify Music Trends</h4>
+                                <p class="card-text"><b>Learning:</b> Formulated patterns in big data and reporting on trends</p>
+                                <p class="card-text"><b>Challenges:</b> Ensuring strong data quality to tell an accurate story with the data</p>
+                                <div class="text-center">
+                                    <a href="https://info201b-wi21.github.io/project-mygreattime/" target = "_blank" class="btn btn-secondary">See Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+        <!-- Add Footer with Github and LinkedIn links -->
+        <footer id="footer">
+            <a href="https://www.github.com/" target="_blank"><i class="fa fa-github" style="font-size:50px;color:black"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-banwari/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:50px;color:black"></i></a>
+        </footer>
+
+    </body>
+</html>
